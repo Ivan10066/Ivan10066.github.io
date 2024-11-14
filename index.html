@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="archivo.css">
+</head>
+<body>
+
+    <!-- Header con imagen de fondo y texto -->
+    <header class="banner">
+        <div class="overlay">
+            <h1>Iván García Cerverón</h1>
+            <p>Desarrollador Web</p>
+            <img class=".logo" src="Diseño sin título (1).png" width="180px" alt="Imagen encima" style="position: absolute; top: -30px; left: 50px;">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#galeria">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Div de Cookies -->
+    <div id="cookieBanner" class="cookie-banner">
+        <p>Este sitio usa cookies para mejorar la experiencia. <button id="acceptCookies">Aceptar</button></p>
+    </div>
+
+    <!-- Contenido de la página -->
+    <main>
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi">
+            <div class="card">
+                <h2>Sobre Mí</h2>
+                <p>Hola, soy Iván García. He estudiado la ESO en el colegio Salesianos San Juan Bosco, Valencia y ahora estoy estudiando SMR.</p>
+                <!-- Redes Sociales -->
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería de Proyectos -->
+        <section id="galeria">
+            <h2>Proyectos</h2>
+            <div class="grid">
+                <!-- Proyecto 1 -->
+                <div class="project">
+                    <img src="IMAGEN PROYECTO DNS.png">
+                    <h3>Proyecto DNS</h3>
+                    <p>Presentación del archivo de packet tracer de DNS</p>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project">
+                    <img src="IMAGEN EXPLICACION BLACKBOX.png">
+                    <h3>Proyecto BLACKBOX</h3>
+                    <p>Explicar cada ejercicio de blackbox</p>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project">
+                    <img src="IMAGEN DAFO.png">
+                    <h3>Proyecto DAFO</h3>
+                    <p>Hacer un análisis DAFO</p>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="project">
+                    <img src="IMAGEN EXPLICACION PROMPT.png">
+                    <h3>Proyecto PROMPTS IA</h3>
+                    <p>Explicar los prompts</p>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="project">
+                    <img src="IMAGEN ACTIVIDAD UNIDAD 3.png">
+                    <h3>Proyecto PRODUCTO UNIDAD 3</h3>
+                    <p>Ejercicios de elegir según su finalidad, y tipos de productos</p>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="project">
+                    <img src="IMAGEN UNIDAD 2.png">
+                    <h3>Proyecto ACTIVIDAD U2</h3>
+                    <p>Ejercicios de logotipos, balance social, etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades">
+            <h2>Habilidades y Conocimientos</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="imagen html.png" width="100px">
+                    <h3>HTML</h3>
+                    <p>HTML es el lenguaje de marcado estándar utilizado para crear y estructurar páginas web. </p>
+                </div>
+                <div class="skill">
+                    <img src="imagen css.png" width="100px">
+                    <h3>CSS</h3>
+                    <p>CSS es un lenguaje utilizado para describir la presentación y el diseño de un documento HTML.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <p>“¿Quieres contratarme? ¡Hablemos!</p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 Iván García Cerverón</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
